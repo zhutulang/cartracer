@@ -40,7 +40,6 @@
 		window.WebSocket = window.MozWebSocket;
 	}
 	if (window.WebSocket) {
-		//socket = new WebSocket("ws://carmove.zhutulang.cn:9999/websocket");
 		socket = new WebSocket("ws://localhost:9999/websocket");
 		socket.onmessage = function(event) {
 			markLocation(event.data);
